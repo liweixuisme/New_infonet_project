@@ -1,0 +1,1209 @@
+#中石油pos登录页面
+pos_petro_login_page:
+  #账号输入框
+#  username_ele_GPS: uiautomator_id
+#  username_ele: cnpc.com.hft.hftlauncher:id/et_login_account
+  username_ele_GPS: uiautomator_text
+  username_ele: 请输入账号
+  username: 15361710005
+  #密码输入框
+  password_ele_GPS: uiautomator_id
+  password_ele: cnpc.com.hft.hftlauncher:id/et_login_pwd
+#  username_ele_GPS: uiautomator_text
+#  username_ele: 请输入6位密码
+  password: 123456
+  #确定登录钮
+  confirm_ele_GPS: uiautomator_id
+  confirm_ele: cnpc.com.hft.hftlauncher:id/btn_login
+#中石油pos首页页面
+pos_petro_home_page:
+  shouyintai_image_GPS: uiautomator_id
+  shouyintai_image: cnpc.com.hft.hftlauncher:id/syt
+#惠智付 android手机
+hzf_android_mobile_login_page:
+#  username_ele_GPS: xpath
+#  username_ele: //*[@resource-id='tel']/android.view.View[1]/android.widget.EditText
+#  password_ele_GPS: xpath
+#  password_ele: //*[@resource-id='password']/android.view.View[1]/android.widget.EditText
+#  login_button_ele_GPS: xpath
+#  login_button_ele: //*[@resource-id='loginForm']/android.widget.Button
+  username_ele_GPS: uiautomator_text
+  username_ele: 请输入手机号码
+  password_ele_GPS: xpath
+  password_ele: //*[@resource-id='password']/android.view.View[1]/android.widget.EditText
+  login_button_ele_GPS: xpath
+  login_button_ele: //*[@resource-id='loginForm']/android.widget.Button
+#  login_button_ele: //android.widget.Button[@content-desc="登录"]
+  forgot_password_button_GPS: accessibilityid
+  forgot_password_button: 忘记密码
+#中石油pc登录页面
+pc_petro_login_page:
+  #PC端账号框
+  pc_username_ele_GPS: xpath
+  pc_username_ele: //input[@type='text' and @class='el-input__inner']
+  #PC端密码框
+  pc_password_ele_GPS: xpath
+  pc_password_ele: //input[@type='password' and @class='el-input__inner' and @autocomplete='off']
+  #PC端登录按钮
+  pc_login_ele_GPS: xpath
+  pc_login_ele: //button[@class='el-button t-btn el-button--default']
+  #PC端账号
+  pc_username: uSmileAdmin
+  #PC端密码
+  pc_password: usmile2018
+#中石油pc登录页面
+pc_boss_login_page:
+  #PC端账号框
+  pc_username_ele_GPS: id
+  pc_username_ele: userName
+  #PC端密码框
+  pc_password_ele_GPS: id
+  pc_password_ele: password
+  #PC端登录按钮
+  pc_login_ele_GPS: class_name
+  pc_login_ele: btn
+  #PC端账号
+  pc_username: uSmileAdmin
+  #PC端密码
+  pc_password: usmile2018
+#首页》收银台钮
+shouye_shouyintai_ele_GPS: id
+shouye_shouyintai_ele: cnpc.com.hft.hftlauncher:id/syt
+#货流管理钮
+huoliuguanli_ele_GPS: xpath
+huoliuguanli_ele: //android.widget.TextView[contains(@text,'货流管理')]
+#货流管理》调拨钮
+huoliuguanli_diaobo_ele_GPS: id
+huoliuguanli_diaobo_ele: cnpc.com.hft.hftlauncher:id/allocate_tv
+#调拨条码输入框
+diaobo_codeinput_ele_GPS: id
+diaobo_codeinput_ele: cnpc.com.hft.hftlauncher:id/edt_good_code
+#调拨》搜索到的唯一商品钮
+diaobo_onlycode_ele_GPS: xpath
+diaobo_onlycode_ele: //*[@resource-id='cnpc.com.hft.hftlauncher:id/recycler_view']/android.widget.FrameLayout
+#调拨》数字键盘1
+diaobo_key1_ele_GPS: id
+diaobo_key1_ele: cnpc.com.hft.hftlauncher:id/bt_keyboard_1
+#调拨》数字键盘2
+diaobo_key2_ele_GPS: id
+diaobo_key2_ele: cnpc.com.hft.hftlauncher:id/bt_keyboard_2
+#调拨》数字键盘0
+diaobo_key0_ele_GPS: id
+diaobo_key0_ele: cnpc.com.hft.hftlauncher:id/bt_keyboard_0
+#调拨》数字键盘》确定
+diaobo_key_confirm_ele_GPS: id
+diaobo_key_confirm_ele: cnpc.com.hft.hftlauncher:id/bt_keyboard_sure
+#调拨》首次确认调拨
+diaobo_first_confirm_ele_GPS: id
+diaobo_first_confirm_ele: cnpc.com.hft.hftlauncher:id/receive_tv
+#调拨》二次确认调拨
+diaobo_second_confirm_ele_GPS: xpath
+diaobo_second_confirm_ele: //*[@resource-id='cnpc.com.hft.hftlauncher:id/sure_btn']/android.widget.TextView
+#调拨》选择调拨方式钮
+diaobo_chose_diaobo_way_ele_GPS: id
+diaobo_chose_diaobo_way_ele: cnpc.com.hft.hftlauncher:id/tv_type
+#调拨》调入商品钮
+diaobo_chose_diaoru_ele_GPS: xpath
+diaobo_chose_diaoru_ele: //*[@resource-id='cnpc.com.hft.hftlauncher:id/listView']/android.widget.RelativeLayout[1]/android.widget.TextView
+#调拨》调出商品钮
+diaobo_chose_diaochu_ele_GPS: xpath
+diaobo_chose_diaochu_ele: //*[@resource-id='cnpc.com.hft.hftlauncher:id/listView']/android.widget.RelativeLayout[2]/android.widget.TextView
+#调拨》选择调拨店铺
+diaobo_chose_diaobo_store_ele_GPS: id
+diaobo_chose_diaobo_store_ele: cnpc.com.hft.hftlauncher:id/tv_shop
+#调拨》选择具体店铺
+diaobo_chose_diaobo_jutistore_ele_GPS: uiautomator
+diaobo_chose_diaobo_jutistore_ele: new UiSelector().text("store_name")
+#调拨历史
+diaobolishi_ele_GPS: id
+diaobolishi_ele: cnpc.com.hft.hftlauncher:id/allocate_history_tv
+#调拨历史》调拨类型筛选栏
+diaobolishi_diaoboleixin_ele_GPS: id
+diaobolishi_diaoboleixin_ele: cnpc.com.hft.hftlauncher:id/tv_type
+#调拨历史》具体调拨单类型选择
+diaobolishi_juti_diaobo_type_GPS: uiautomator
+diaobolishi_juti_diaobo_type: new UiSelector().text(diaobo_type)
+#调拨历史》查看钮
+diaobolishi_chakan_ele_GPS: id
+diaobolishi_chakan_ele: cnpc.com.hft.hftlauncher:id/btn_check
+#调拨历史》确认调拨量钮
+diaobolishi_diaoboliang_confirm_ele_GPS: id
+diaobolishi_diaoboliang_confirm_ele: cnpc.com.hft.hftlauncher:id/tv_ok
+#调拨历史》动态的调拨量输入弹窗框
+diaobolishi_diaoboliang_input_ele_GPS: xpath
+diaobolishi_diaoboliang_input_ele: //*[@resource-id='cnpc.com.hft.hftlauncher:id/recyclerview']/android.widget.LinearLayout[strnum]/android.widget.LinearLayout[1]/android.widget.EditText
+#调拨历史》确认所有确认调拨量
+diaobolishi_confirm_all_diaoboliang_ele_GPS: id
+diaobolishi_confirm_all_diaoboliang_ele: cnpc.com.hft.hftlauncher:id/tv_ok
+#调拨历史》不一致的原因窗》确定
+diaobolishi_different_quantity_reason_confirm_ele_GPS: id
+diaobolishi_different_quantity_reason_confirm_ele: cnpc.com.hft.hftlauncher:id/btn_confirm
+#调拨历史》不一致的原因输入框
+diaobolishi_different_quantity_reason_ele_GPS: id
+diaobolishi_different_quantity_reason_ele: cnpc.com.hft.hftlauncher:id/et_input
+#调拨历史》二次确认所有确认调拨量
+diaobolishi_second_confirm_all_diaoboliang_ele_GPS: id
+diaobolishi_second_confirm_all_diaoboliang_ele: cnpc.com.hft.hftlauncher:id/sure_btn
+#调拨历史》取消调拨单钮
+diaobolishi_quxiao_diaobodan_ele_GPS: id
+diaobolishi_quxiao_diaobodan_ele: cnpc.com.hft.hftlauncher:id/tv_ok
+#调拨历史》状态选择钮
+diaobolishi_chose_status_ele_GPS: id
+diaobolishi_chose_status_ele: cnpc.com.hft.hftlauncher:id/tv_status
+#调拨历史》具体状态值》未确认
+diaobolishi_chose_weiqueren_status_ele_GPS: xpath
+diaobolishi_chose_weiqueren_status_ele: //*[@resource-id='cnpc.com.hft.hftlauncher:id/listView']/android.widget.RelativeLayout[1]
+#调拨历史》具体状态值》未审核
+diaobolishi_chose_weishenhe_status_ele_GPS: xpath
+diaobolishi_chose_weishenhe_status_ele: //*[@resource-id='cnpc.com.hft.hftlauncher:id/listView']/android.widget.RelativeLayout[2]
+#调拨历史》具体状态值》待收货
+diaobolishi_chose_daishouhuo_status_ele_GPS: xpath
+diaobolishi_chose_daishouhuo_status_ele: //*[@resource-id='cnpc.com.hft.hftlauncher:id/listView']/android.widget.RelativeLayout[3]
+#调拨历史》具体状态值》已收货
+diaobolishi_chose_yishouhuo_status_ele_GPS: xpath
+diaobolishi_chose_yishouhuo_status_ele: //*[@resource-id='cnpc.com.hft.hftlauncher:id/listView']/android.widget.RelativeLayout[4]
+#调拨历史》具体状态值》未通过
+diaobolishi_chose_weitongguo_status_ele_GPS: xpath
+diaobolishi_chose_weitongguo_status_ele: //*[@resource-id='cnpc.com.hft.hftlauncher:id/listView']/android.widget.RelativeLayout[5]
+#调拨历史》具体状态值》已取消
+diaobolishi_chose_yiquxiao_status_ele_GPS: xpath
+diaobolishi_chose_yiquxiao_status_ele: //*[@resource-id='cnpc.com.hft.hftlauncher:id/listView']/android.widget.RelativeLayout[6]
+#调拨历史》具体状态值》全部
+diaobolishi_chose_quanbu_status_ele_GPS: xpath
+diaobolishi_chose_quanbu_status_ele: //*[@resource-id='cnpc.com.hft.hftlauncher:id/listView']/android.widget.RelativeLayout[7]
+#调拨历史》选择时间钮
+diaobolishi_select_data_ele_GPS: id
+diaobolishi_select_data_ele: cnpc.com.hft.hftlauncher:id/select_date_tv
+#调拨历史》选择具体时间》近7天
+diaobolishi_select_jin7tian_ele_GPS: xpath
+diaobolishi_select_jin7tian_ele: //*[@resource-id='cnpc.com.hft.hftlauncher:id/grid_view']/android.widget.TextView[4]
+#pc货流钮
+pc_huoliu_ele_GPS: xpath
+pc_huoliu_ele: //ul[@class='nav']/li[4]
+#pc调拨单审核钮
+pc_diaobodanshenhe_ele_GPS: xpath
+pc_diaobodanshenhe_ele: //ul[@class='nav']/li[4]/ul/li[5]
+#pc调拨单审核》状态筛选框
+pc_diaobodanshenhe_status_select_ele_GPS: xpath
+pc_diaobodanshenhe_status_select_ele: //div[@id='headCom']/div[1]/div[3]/div[1]
+#pc调拨单审核》选择具体状态》动态取一状态
+pc_diaobodanshenhe_chose_a_status_ele_GPS: xpath
+pc_diaobodanshenhe_chose_a_status_ele: //*[contains(text(),"statu")]
+#pc调拨单审核》开始时间框
+pc_diaobodanshenhe_start_date_ele_GPS: xpath
+pc_diaobodanshenhe_start_date_ele: //*[@class='time']/div[1]/div[1]
+#pc调拨单审核》开始时间》日期
+pc_diaobodanshenhe_start_date_day_ele_GPS: xpath
+pc_diaobodanshenhe_start_date_day_ele: //*[@class='el-input el-input--small']/input[1]
+#pc调拨单审核》开始时间》确定钮
+pc_diaobodanshenhe_start_date_confirm_ele_GPS: xpath
+pc_diaobodanshenhe_start_date_confirm_ele: //button[@class='el-button el-picker-panel__link-btn el-button--default el-button--mini is-plain']
+#pc调拨单审核》查询钮
+pc_diaobodanshenhe_chaxun_ele_GPS: xpath
+pc_diaobodanshenhe_chaxun_ele: //*[contains(text(),"查询")]
+#pc调拨单审核》审核钮
+pc_diaobodanshenhe_shenhe_ele_GPS: xpath
+pc_diaobodanshenhe_shenhe_ele: //span[contains(text(),"审核")]
+#pc调拨单审核》审核通过钮
+pc_diaobodanshenhe_shenhe_pass_ele_GPS: xpath
+pc_diaobodanshenhe_shenhe_pass_ele: //div[@id='orderDetailbox']/div[1]/div[1]/div[1]/div[3]/span[1]/button[1]
+#pc调拨单审核》审批量与确认调拨量不一致的原因输入框
+pc_diaobodanshenhe_different_quantity_reason_ele_GPS: xpath
+pc_diaobodanshenhe_different_quantity_reason_ele: //textarea[@placeholder='请输入原因(1-100)']
+#pc调拨单审核》审批量与确认调拨量不一致弹窗>确定
+pc_diaobodanshenhe_different_quantity_confirm_ele_GPS: xpath
+pc_diaobodanshenhe_different_quantity_confirm_ele: //*[contains(text(),"确定")]
+#pc调拨单审核》二次确认审核通过钮
+pc_diaobodanshenhe_second_shenhe_pass_ele_GPS: xpath
+pc_diaobodanshenhe_second_shenhe_pass_ele: //div[@id='orderDetailbox']/div[2]/div[1]/div[3]/span[1]/button[2]
+#pc调拨单审核>总部审批量输入框
+pc_diaobodanshenhe_shenpi_quantity_input_ele_GPS: xpath
+pc_diaobodanshenhe_shenpi_quantity_input_ele: //table[@class='el-table__body']/tbody[1]/tr[order]/td[8]/div[1]/div[1]/input
+#pc调拨单审核》检测“审核通过”文本
+pc_diaoboshenhe_pass_text_ele_GPS: xpath
+pc_diaoboshenhe_pass_text_ele: //p[@class='el-message__content']
+#pc调拨单审核》检测“审核不通过”文本
+pc_diaoboshenhe_refuse_text_ele_GPS: xpath
+pc_diaoboshenhe_refuse_text_ele: //p[@class='el-message__content']
+#货流管理》订货钮
+huoliuguanli_subscribe_ele_GPS: xpath
+huoliuguanli_subscribe_ele: //android.widget.TextView[contains(@text,'订货')]
+#订货条码输入框
+subscribe_codeinput_ele_GPS: id
+subscribe_codeinput_ele: cnpc.com.hft.hftlauncher:id/edt_good_code
+#订货》搜索到的唯一商品钮
+subscribe_onlycode_ele_GPS: xpath
+subscribe_onlycode_ele: //*[@resource-id='cnpc.com.hft.hftlauncher:id/recycler_view']/android.widget.FrameLayout
+#订货》数字键盘1
+subscribe_key1_ele_GPS: id
+subscribe_key1_ele: cnpc.com.hft.hftlauncher:id/bt_keyboard_1
+#订货》数字键盘2
+subscribe_key2_ele_GPS: id
+subscribe_key2_ele: cnpc.com.hft.hftlauncher:id/bt_keyboard_2
+#订货》数字键盘0
+subscribe_key0_ele_GPS: id
+subscribe_key0_ele: cnpc.com.hft.hftlauncher:id/bt_keyboard_0
+#订货》数字键盘》确定
+subscribe_key_confirm_ele_GPS: id
+subscribe_key_confirm_ele: cnpc.com.hft.hftlauncher:id/bt_keyboard_sure
+#订货》首次确认订货
+subscribe_first_confirm_ele_GPS: id
+subscribe_first_confirm_ele: cnpc.com.hft.hftlauncher:id/receive_tv
+#订货》二次确认订货
+subscribe_second_confirm_ele_GPS: xpath
+subscribe_second_confirm_ele: //*[@resource-id='cnpc.com.hft.hftlauncher:id/sure_btn']/android.widget.TextView
+#订货历史
+subscribelishi_ele_GPS: id
+subscribelishi_ele: cnpc.com.hft.hftlauncher:id/allocate_history_tv
+#订货历史》订货类型筛选栏
+subscribelishi_subscribeleixin_ele_GPS: id
+subscribelishi_subscribeleixin_ele: cnpc.com.hft.hftlauncher:id/tv_type
+#订货历史》具体订货单类型选择
+subscribelishi_juti_subscribe_type_GPS: uiautomator
+subscribelishi_juti_subscribe_type: new UiSelector().text(subscribe_type)
+#订货历史》查看钮
+subscribelishi_chakan_ele_GPS: id
+subscribelishi_chakan_ele: cnpc.com.hft.hftlauncher:id/btn_check
+#订货历史》确认订货量钮
+subscribelishi_subscribeliang_confirm_ele_GPS: id
+subscribelishi_subscribeliang_confirm_ele: cnpc.com.hft.hftlauncher:id/tv_ok
+#订货历史》动态的订货量输入弹窗框
+subscribelishi_subscribeliang_input_ele_GPS: xpath
+subscribelishi_subscribeliang_input_ele: //*[@resource-id='cnpc.com.hft.hftlauncher:id/recyclerview']/android.widget.LinearLayout[strnum]/android.widget.LinearLayout[1]/android.widget.EditText
+#订货历史》确认所有确认订货量
+subscribelishi_confirm_all_subscribeliang_ele_GPS: id
+subscribelishi_confirm_all_subscribeliang_ele: cnpc.com.hft.hftlauncher:id/tv_ok
+#订货历史》不一致的原因窗》确定
+subscribelishi_different_quantity_reason_confirm_ele_GPS: id
+subscribelishi_different_quantity_reason_confirm_ele: cnpc.com.hft.hftlauncher:id/btn_confirm
+#订货历史》不一致的原因输入框
+subscribelishi_different_quantity_reason_ele_GPS: id
+subscribelishi_different_quantity_reason_ele: cnpc.com.hft.hftlauncher:id/et_input
+#订货历史》二次确认所有确认订货量
+subscribelishi_second_confirm_all_subscribeliang_ele_GPS: id
+subscribelishi_second_confirm_all_subscribeliang_ele: cnpc.com.hft.hftlauncher:id/sure_btn
+#订货历史》取消订货单钮
+subscribelishi_quxiao_subscribe_ele_GPS: id
+subscribelishi_quxiao_subscribe_ele: cnpc.com.hft.hftlauncher:id/tv_ok
+#订货历史》状态选择钮
+subscribelishi_chose_status_ele_GPS: id
+subscribelishi_chose_status_ele: cnpc.com.hft.hftlauncher:id/tv_status
+#订货历史》具体状态值》未确认
+subscribelishi_chose_weiqueren_status_ele_GPS: xpath
+subscribelishi_chose_weiqueren_status_ele: //*[@resource-id='cnpc.com.hft.hftlauncher:id/listView']/android.widget.RelativeLayout[1]
+#订货历史》具体状态值》未审核
+subscribelishi_chose_weishenhe_status_ele_GPS: xpath
+subscribelishi_chose_weishenhe_status_ele: //*[@resource-id='cnpc.com.hft.hftlauncher:id/listView']/android.widget.RelativeLayout[2]
+#订货历史》具体状态值》待收货
+subscribelishi_chose_daishouhuo_status_ele_GPS: xpath
+subscribelishi_chose_daishouhuo_status_ele: //*[@resource-id='cnpc.com.hft.hftlauncher:id/listView']/android.widget.RelativeLayout[3]
+#订货历史》具体状态值》已收货
+subscribelishi_chose_yishouhuo_status_ele_GPS: xpath
+subscribelishi_chose_yishouhuo_status_ele: //*[@resource-id='cnpc.com.hft.hftlauncher:id/listView']/android.widget.RelativeLayout[4]
+#订货历史》具体状态值》未通过
+subscribelishi_chose_weitongguo_status_ele_GPS: xpath
+subscribelishi_chose_weitongguo_status_ele: //*[@resource-id='cnpc.com.hft.hftlauncher:id/listView']/android.widget.RelativeLayout[5]
+#订货历史》具体状态值》已取消
+subscribelishi_chose_yiquxiao_status_ele_GPS: xpath
+subscribelishi_chose_yiquxiao_status_ele: //*[@resource-id='cnpc.com.hft.hftlauncher:id/listView']/android.widget.RelativeLayout[6]
+#订货历史》具体状态值》全部
+subscribelishi_chose_quanbu_status_ele_GPS: xpath
+subscribelishi_chose_quanbu_status_ele: //*[@resource-id='cnpc.com.hft.hftlauncher:id/listView']/android.widget.RelativeLayout[7]
+#订货历史》选择时间钮
+subscribelishi_select_data_ele_GPS: id
+subscribelishi_select_data_ele: cnpc.com.hft.hftlauncher:id/select_date_tv
+#订货历史》选择具体时间》近7天
+subscribelishi_select_jin7tian_ele_GPS: xpath
+subscribelishi_select_jin7tian_ele: //*[@resource-id='cnpc.com.hft.hftlauncher:id/grid_view']/android.widget.TextView[4]
+#pc订货单审核钮
+pc_subscribeshenhe_ele_GPS: xpath
+pc_subscribeshenhe_ele: //ul[@class='nav']/li[4]/ul/li[4]
+#pc订货单审核》状态筛选框
+pc_subscribeshenhe_status_select_ele_GPS: xpath
+pc_subscribeshenhe_status_select_ele: //div[@id='headCom']/div[1]/div[2]/div[1]
+#pc订货单审核》选择具体状态》动态取一状态
+pc_subscribeshenhe_chose_a_status_ele_GPS: xpath
+pc_subscribeshenhe_chose_a_status_ele: //*[contains(text(),"statu")]
+#pc订货单审核》店铺筛选框
+pc_subscribeshenhe_store_select_ele_GPS: xpath
+pc_subscribeshenhe_store_select_ele: //div[@id='headCom']/div[1]/div[1]
+#pc订货单审核》选择具体状态》动态取一店铺
+pc_subscribeshenhe_chose_a_store_ele_GPS: xpath
+pc_subscribeshenhe_chose_a_store_ele: //*[contains(text(),"store_name")]/..
+#pc订货单审核》开始时间框
+pc_subscribeshenhe_start_date_ele_GPS: xpath
+pc_subscribeshenhe_start_date_ele: //*[@class='time']/div[1]/div[1]
+#pc订货单审核》开始时间》日期
+pc_subscribeshenhe_start_date_day_ele_GPS: xpath
+pc_subscribeshenhe_start_date_day_ele: //*[@class='el-input el-input--small']/input[1]
+#pc订货单审核》开始时间》确定钮
+pc_subscribeshenhe_start_date_confirm_ele_GPS: xpath
+pc_subscribeshenhe_start_date_confirm_ele: //button[@class='el-button el-picker-panel__link-btn el-button--default el-button--mini is-plain']
+#pc订货单审核》查询钮
+pc_subscribeshenhe_chaxun_ele_GPS: xpath
+pc_subscribeshenhe_chaxun_ele: //*[contains(text(),"查询")]
+#pc订货单审核》查看子订单钮
+pc_subscribeshenhe_chakanzidingdan_ele_GPS: xpath
+pc_subscribeshenhe_chakanzidingdan_ele: //span[contains(text(),"查看子订单")]/..
+#pc订货单审核》子订单详情》审核钮
+pc_subscribeshenhe_shenhe_ele_GPS: xpath
+pc_subscribeshenhe_shenhe_ele: //span[contains(text(),"审核")]/..
+#pc订货单审核》审核不通过钮
+pc_subscribeshenhe_shenhe_refuse_ele_GPS: xpath
+pc_subscribeshenhe_shenhe_refuse_ele: //div[@id='orderDetailbox']/div[1]/div[1]/div[1]/div[3]/span[1]/button[2]
+#pc订货单审核》审核不通过的原因输入框
+pc_subscribeshenhe_refuse_reason_ele_GPS: xpath
+pc_subscribeshenhe_refuse_reason_ele: //textarea[@placeholder='请输入未通过审核的理由（1-100字）']
+#pc订货单审核》审核不通过的原因弹窗>确定
+pc_subscribeshenhe_refuse_confirm_ele_GPS: xpath
+pc_subscribeshenhe_refuse_confirm_ele: //div[@id='orderDetailbox']/div[3]/div[1]/div[3]/span[1]/button[2]
+#pc订货单审核>总部审批量输入框
+pc_subscribeshenhe_shenpi_quantity_input_ele_GPS: xpath
+pc_subscribeshenhe_shenpi_quantity_input_ele: //table[@class='el-table__body']/tbody[1]/tr[order]/td[6]/div[1]/div[1]/input
+#pc订货单审核》审批量与确认订货量不一致弹窗>确定
+pc_subscribeshenhe_different_quantity_confirm_ele_GPS: xpath
+pc_subscribeshenhe_different_quantity_confirm_ele: //div[@id='orderDetailbox']/div[2]/div[1]/div[3]/span[1]/button[2]
+#pc订货单审核》二次确认审核通过钮
+pc_subscribeshenhe_second_shenhe_pass_ele_GPS: xpath
+pc_subscribeshenhe_second_shenhe_pass_ele: //div[@id='orderDetailbox']/div[2]/div[1]/div[3]/span[1]/button[2]
+#pc订货单审核》检测“审核通过”文本
+pc_subscribeshenhe_pass_text_ele_GPS: xpath
+pc_subscribeshenhe_pass_text_ele: //p[@class='el-message__content']
+#pc订货单审核》检测“审核不通过”文本
+pc_subscribeshenhe_refuse_text_ele_GPS: xpath
+pc_subscribeshenhe_refuse_text_ele: //p[@class='el-message__content']
+#pc订货单审核》子订单详情》确认钮
+pc_subscribeshenhe_queren_button_ele_GPS: xpath
+pc_subscribeshenhe_queren_button_ele: //span[contains(text(),"确认")]/..
+#pc订货单审核》审核通过钮
+pc_subscribeshenhe_shenhe_pass_ele_GPS: xpath
+pc_subscribeshenhe_shenhe_pass_ele: //div[@id='orderDetailbox']/div[1]/div[1]/div[1]/div[3]/span[1]/button[1]
+#pc订货单审核》审批量与确认订货量不一致的原因输入框
+pc_subscribeshenhe_different_quantity_reason_ele_GPS: xpath
+pc_subscribeshenhe_different_quantity_reason_ele: //textarea[@placeholder='请输入原因(1-100)']
+#pc订货单审核》商品部确认钮
+pc_subscribeshenhe_goodpartment_pass_button_ele_GPS: xpath
+pc_subscribeshenhe_goodpartment_pass_button_ele: //span[contains(text(),"商品部确认")]/..
+#pc订货单审核>供应商出货量输入框
+pc_subscribeshenhe_wholesalequantity_input_ele_GPS: xpath
+pc_subscribeshenhe_wholesalequantity_input_ele: //table[@class='el-table__body']/tbody[1]/tr[order]/td[7]/div[1]/div[1]/input[1]
+#pc订货单审核》商品部确认订单 按钮
+pc_subscribeshenhe_goodpartment_confirm_ele_GPS: xpath
+pc_subscribeshenhe_goodpartment_confirm_ele: //span[contains(text(),"确认订单")]/..
+#pc订货单审核》出货量与审批量不一致的原因输入框
+pc_subscribeshenhe_out_and_pass_different_quantity_reason_ele_GPS: xpath
+pc_subscribeshenhe_out_and_pass_different_quantity_reason_ele: //textarea[@placeholder='请输入原因(1-100)']
+#pc订货单审核》商品部 二次确认钮
+pc_subscribeshenhe_goodpartment_second_confirm_button_ele_GPS: xpath
+pc_subscribeshenhe_goodpartment_second_confirm_button_ele: //div[@id='orderDetailbox']/div[6]/div[1]/div[3]/span[1]/button[2]
+#pc订货单审核》商品部确认》检测“审核通过”文本
+pc_subscribeshenhe_goodpartment_pass_text_ele_GPS: xpath
+pc_subscribeshenhe_goodpartment_pass_text_ele: //p[@class='el-message__content']
+#pc退货单审核钮
+pc_subscribe_returnshenhe_ele_GPS: xpath
+pc_subscribe_returnshenhe_ele: //ul[@class='nav']/li[4]/ul/li[6]
+#pc退货单审核》状态筛选框
+pc_subscribe_returnshenhe_status_select_ele_GPS: xpath
+pc_subscribe_returnshenhe_status_select_ele: //div[@id='headCom']/div[1]/div[2]/div[1]
+#pc退货单审核》选择具体状态》动态取一状态
+pc_subscribe_returnshenhe_chose_a_status_ele_GPS: xpath
+pc_subscribe_returnshenhe_chose_a_status_ele: //*[contains(text(),"statu")]
+#pc退货单审核》店铺筛选框
+pc_subscribe_returnshenhe_store_select_ele_GPS: xpath
+pc_subscribe_returnshenhe_store_select_ele: //div[@id='headCom']/div[1]/div[1]
+#pc退货单审核》选择具体状态》动态取一店铺
+pc_subscribe_returnshenhe_chose_a_store_ele_GPS: xpath
+pc_subscribe_returnshenhe_chose_a_store_ele: //*[contains(text(),"store_name")]/..
+#pc退货单审核》开始时间框
+pc_subscribe_returnshenhe_start_date_ele_GPS: xpath
+pc_subscribe_returnshenhe_start_date_ele: //*[@class='time']/div[1]/div[1]
+#pc退货单审核》开始时间》日期
+pc_subscribe_returnshenhe_start_date_day_ele_GPS: xpath
+pc_subscribe_returnshenhe_start_date_day_ele: //*[@class='el-input el-input--small']/input[1]
+#pc退货单审核》开始时间》确定钮
+pc_subscribe_returnshenhe_start_date_confirm_ele_GPS: xpath
+pc_subscribe_returnshenhe_start_date_confirm_ele: //button[@class='el-button el-picker-panel__link-btn el-button--default el-button--mini is-plain']
+#pc退货单审核》查询钮
+pc_subscribe_returnshenhe_chaxun_ele_GPS: xpath
+pc_subscribe_returnshenhe_chaxun_ele: //*[contains(text(),"查询")]
+#pc退货单审核》查看子订单钮
+pc_subscribe_returnshenhe_chakanzidingdan_ele_GPS: xpath
+pc_subscribe_returnshenhe_chakanzidingdan_ele: //span[contains(text(),"查看子订单")]/..
+#pc退货单审核》审核钮
+pc_subscribe_returnshenhe_shenhe_ele_GPS: xpath
+pc_subscribe_returnshenhe_shenhe_ele: //span[contains(text(),"审核")]/..
+#pc退货单审核》审核通过钮
+pc_subscribe_returnshenhe_shenhe_pass_ele_GPS: xpath
+pc_subscribe_returnshenhe_shenhe_pass_ele: //div[@id='orderDetailbox']/div[1]/div[1]/div[1]/div[3]/span[1]/button[1]
+#pc退货单审核》审批量与确认退货量不一致的原因输入框
+pc_subscribe_returnshenhe_different_quantity_reason_ele_GPS: xpath
+pc_subscribe_returnshenhe_different_quantity_reason_ele: //textarea[@placeholder='请输入原因(1-100)']
+#pc退货单审核》审核不通过钮
+pc_subscribe_returnshenhe_shenhe_refuse_ele_GPS: xpath
+pc_subscribe_returnshenhe_shenhe_refuse_ele: //div[@id='orderDetailbox']/div[1]/div[1]/div[1]/div[3]/span[1]/button[2]
+#pc退货单审核》审核不通过的原因输入框
+pc_subscribe_returnshenhe_refuse_reason_ele_GPS: xpath
+pc_subscribe_returnshenhe_refuse_reason_ele: //textarea[@placeholder='请输入未通过审核的理由（1-100字）']
+#pc退货单审核》审核不通过的原因弹窗>确定
+pc_subscribe_returnshenhe_refuse_confirm_ele_GPS: xpath
+pc_subscribe_returnshenhe_refuse_confirm_ele: //div[@id='orderDetailbox']/div[3]/div[1]/div[3]/span[1]/button[2]
+#pc退货单审核》审批量与确认退货量不一致弹窗>确定
+pc_subscribe_returnshenhe_different_quantity_confirm_ele_GPS: xpath
+pc_subscribe_returnshenhe_different_quantity_confirm_ele: //div[@id='orderDetailbox']/div[2]/div[1]/div[3]/span[1]/button[2]
+#pc退货单审核》二次确认审核通过钮
+pc_subscribe_returnshenhe_second_shenhe_pass_ele_GPS: xpath
+pc_subscribe_returnshenhe_second_shenhe_pass_ele: //div[@id='orderDetailbox']/div[2]/div[1]/div[3]/span[1]/button[2]
+#pc退货单审核》检测“审核通过”文本
+pc_subscribe_returnshenhe_pass_text_ele_GPS: xpath
+pc_subscribe_returnshenhe_pass_text_ele: //p[@class='el-message__content']
+#pc退货单审核》检测“审核不通过”文本
+pc_subscribe_returnshenhe_refuse_text_ele_GPS: xpath
+pc_subscribe_returnshenhe_refuse_text_ele: //p[@class='el-message__content']
+#pc退货单审核>总部审批量输入框
+pc_subscribe_returnshenhe_shenpi_quantity_input_ele_GPS: xpath
+pc_subscribe_returnshenhe_shenpi_quantity_input_ele: //table[@class='el-table__body']/tbody[1]/tr[order]/td[6]/div[1]/div[1]/input
+#pc门店钮
+pc_store_ele_GPS: xpath
+pc_store_ele: //ul[@class='nav']/li[2]
+#pc门店>新增门店钮
+pc_store_add_ele_GPS: xpath
+pc_store_add_ele: //*[contains(text(),"新增门店")]
+#pc门店>新增门店>门店名称输入框
+pc_store_add_storename_input_ele_GPS: xpath
+pc_store_add_storename_input_ele: //form[@class='el-form']/div[1]/div[1]/div[1]/input[1]
+#pc门店>新增门店>门店联系人
+pc_store_add_contator_input_ele_GPS: xpath
+pc_store_add_contator_input_ele: //form[@class='el-form']/div[2]/div[1]/div[1]/input[1]
+#pc门店>新增门店>门店店主登录账号
+pc_store_add_login_phonenumber_input_ele_GPS: xpath
+pc_store_add_login_phonenumber_input_ele: //form[@class='el-form']/div[3]/div[1]/div[1]/input[1]
+#pc门店>新增门店>门店店主登录密码
+pc_store_add_login_password_input_ele_GPS: xpath
+pc_store_add_login_password_input_ele: //form[@class='el-form']/div[4]/div[1]/div[1]/input[1]
+#pc门店>新增门店>门店SN号
+pc_store_add_sn_input_ele_GPS: xpath
+pc_store_add_sn_input_ele: //form[@class='el-form']/div[5]/div[1]/div[1]/input[1]
+#pc门店>新增门店>门店地址>省
+pc_store_add_province_select_ele_GPS: xpath
+pc_store_add_province_select_ele: //form[@class='el-form']/div[6]/div[1]/div[1]
+#pc门店>新增门店>门店地址>市
+pc_store_add_city_select_ele_GPS: xpath
+pc_store_add_city_select_ele: //form[@class='el-form']/div[7]/div[1]/div[1]
+#pc门店>新增门店>门店地址>县
+pc_store_add_county_select_ele_GPS: xpath
+pc_store_add_county_select_ele: //form[@class='el-form']/div[8]/div[1]/div[1]
+#pc门店>新增门店>门店地址>选择一个 省/市/区
+pc_store_add_select_a_province_ele_GPS: xpath
+pc_store_add_select_a_province_ele: //ul[@class='el-scrollbar__view el-select-dropdown__list']//*[contains(text(),"province")]/..
+pc_store_add_select_a_city_ele_GPS: xpath
+pc_store_add_select_a_city_ele: //ul[@class='el-scrollbar__view el-select-dropdown__list']//*[contains(text(),"city")]/..
+pc_store_add_select_a_county_ele_GPS: xpath
+pc_store_add_select_a_county_ele: //ul[@class='el-scrollbar__view el-select-dropdown__list']//*[contains(text(),"county")]/..
+#pc门店>新增门店>门店详细地址
+pc_store_add_address_input_ele_GPS: xpath
+pc_store_add_address_input_ele: //form[@class='el-form']/div[9]/div[1]/div[1]/textarea[1]
+#pc门店>新增门店>保存
+pc_store_add_save_button_ele_GPS: xpath
+pc_store_add_save_button_ele: //div[@class='el-form-item']/div[1]/button[1]
+#pc新建店铺》检测“新建店铺成功”文本
+pc_store_add_successfully_text_ele_GPS: xpath
+pc_store_add_successfully_text_ele: //p[@class='el-message__content']
+#pc门店》新增门店》门店搜索输入框
+pc_store_add_storesearch_input_ele_GPS: xpath
+pc_store_add_storesearch_input_ele: //div[@class='right']/div[1]/input[1]
+#pc门店》新增门店》门店搜索钮
+pc_store_add_storesearch_button_ele_GPS: xpath
+pc_store_add_storesearch_button_ele: //div[@class='right']/button[1]
+#pc门店列表第一个修改钮
+#pc_store_list_edit_button_ele_GPS: xpath
+#pc_store_list_edit_button_ele: //*[contains(text(),"修改")]
+pc_store_list_edit_button_ele_GPS: pc_text
+pc_store_list_edit_button_ele: 修改
+#pc门店>编辑门店>门店名称输入框
+pc_store_edit_storename_input_ele_GPS: xpath
+pc_store_edit_storename_input_ele: //form[@class='el-form']/div[1]/div[1]/div[1]/input[1]
+#pc门店>编辑门店>门店联系人
+pc_store_edit_contator_input_ele_GPS: xpath
+pc_store_edit_contator_input_ele: //form[@class='el-form']/div[2]/div[1]/div[1]/input[1]
+#pc门店>编辑门店>门店SN号
+pc_store_edit_sn_input_ele_GPS: xpath
+pc_store_edit_sn_input_ele: //form[@class='el-form']/div[4]/div[1]/div[1]/input[1]
+#pc门店>编辑门店>门店地址>省
+pc_store_edit_province_select_ele_GPS: xpath
+pc_store_edit_province_select_ele: //form[@class='el-form']/div[5]/div[1]/div[1]
+#pc门店>编辑门店>门店地址>市
+pc_store_edit_city_select_ele_GPS: xpath
+pc_store_edit_city_select_ele: //form[@class='el-form']/div[6]/div[1]/div[1]
+#pc门店>编辑门店>门店地址>县
+pc_store_edit_county_select_ele_GPS: xpath
+pc_store_edit_county_select_ele: //form[@class='el-form']/div[7]/div[1]/div[1]
+#pc门店>编辑门店>门店地址>选择一个 省/市/区
+pc_store_edit_select_a_province_ele_GPS: xpath
+pc_store_edit_select_a_province_ele: //*[contains(text(),"province")]/..
+pc_store_edit_select_a_city_ele_GPS: xpath
+pc_store_edit_select_a_city_ele: //*[contains(text(),"city")]/..
+pc_store_edit_select_a_county_ele_GPS: xpath
+pc_store_edit_select_a_county_ele: //*[contains(text(),"county")]/..
+#pc门店>编辑门店>门店详细地址
+pc_store_edit_editress_input_ele_GPS: xpath
+pc_store_edit_editress_input_ele: //form[@class='el-form']/div[8]/div[1]/div[1]/textarea[1]
+#pc门店>编辑门店>保存
+pc_store_edit_save_button_ele_GPS: xpath
+pc_store_edit_save_button_ele: //div[@class='el-form-item']/div[1]/button[1]
+#pc修改店铺》检测“修改店铺成功”文本
+pc_store_edit_successfully_text_ele_GPS: xpath
+pc_store_edit_successfully_text_ele: //p[@class='el-message__content']
+#pc商品
+pc_good_ele_GPS: xpath
+pc_good_ele: //ul[@class='nav']/li[3]
+#pc商品》选择店铺钮
+pc_good_store_select_ele_GPS: xpath
+pc_good_store_select_ele: //div[@class='apply-button']/div[1]/div[1]
+#pc商品》动态选择一店铺
+pc_good_chose_a_store_ele_GPS: xpath
+pc_good_chose_a_store_ele: //*[contains(text(),"store_name")]/..
+#pc商品》导入钮
+pc_good_improt_button_ele_GPS: xpath
+pc_good_improt_button_ele: //div[@class='apply-button']/button[1]
+#pc商品》导入》选择店铺钮
+pc_good_improt_store_select_ele_GPS: xpath
+pc_good_improt_store_select_ele: //div[@class='select-copy-s']/div[1]
+#pc商品》导入》动态选择一店铺
+pc_good_improt_select_a_store_ele_GPS: xpath
+#pc_good_improt_select_a_store_ele: //*[contains(text(),"store_name")]
+pc_good_improt_select_a_store_ele: //*[@id='app']/../div[4]//*[contains(text(),"store_name")]/..
+#pc商品》导入》选择excel文件钮
+pc_good_improt_select_googs_excel_ele_GPS: xpath
+pc_good_improt_select_googs_excel_ele: //div[@class='select-shop a-upload']/input[1]
+#pc商品》导入》商品excel文件路径
+pc_good_improt_goods_path: 'D:\测试组\中石油商品数据导入_20190124.xls'
+#pc商品》导入》确定导入商品钮
+pc_good_improt_good_excel_confirm_ele_GPS: xpath
+pc_good_improt_good_excel_confirm_ele: //div[@class='div-btn']/button[1]
+#pc商品导入》检测“导入成功”文本
+pc_good_import_successfully_text_ele_GPS: xpath
+pc_good_import_successfully_text_ele: //p[@class='el-message__content']
+#pc商品》搜索商品输入框
+pc_good_good_code_search_input_ele_GPS: xpath
+pc_good_good_code_search_input_ele: //span[contains(text(),"搜索")]/../div[3]/input[1]
+#pc商品》搜索商品搜索钮
+pc_good_good_code_search_button_ele_GPS: xpath
+pc_good_good_code_search_button_ele: //span[contains(text(),"搜索")]/../span[1]
+#pc商品》修改商品钮
+pc_good_good_edit_button_ele_GPS: xpath
+pc_good_good_edit_button_ele: //*[contains(text(),"修改")]/..
+#pc商品》修改商品》商品名称
+pc_good_good_edit_goodname_input_ele_GPS: xpath
+pc_good_good_edit_goodname_input_ele: //form[@class='el-form card-ruleForm el-form--label-right']/div[3]/div[1]/div[1]/input[1]
+#pc商品》修改商品》商品进价
+pc_good_good_edit_goodinprice_input_ele_GPS: xpath
+pc_good_good_edit_goodinprice_input_ele: //form[@class='el-form card-ruleForm el-form--label-right']/div[11]/div[1]/div[1]/input[1]
+#pc商品》修改商品》商品售价
+pc_good_good_edit_goodsellingprice_input_ele_GPS: xpath
+pc_good_good_edit_goodsellingprice_input_ele: //form[@class='el-form card-ruleForm el-form--label-right']/div[12]/div[1]/div[1]/input[1]
+#pc商品》修改商品》商品税率
+pc_good_good_edit_goodtax_input_ele_GPS: xpath
+pc_good_good_edit_goodtax_input_ele: //form[@class='el-form card-ruleForm el-form--label-right']/div[14]/div[1]/div[1]/input[1]
+#pc商品》修改商品》商品备注
+pc_good_good_edit_goodbeizhu_input_ele_GPS: xpath
+pc_good_good_edit_goodbeizhu_input_ele: //form[@class='el-form card-ruleForm el-form--label-right']/div[15]/div[1]/div[1]/input[1]
+#pc商品》修改商品》确定按钮
+pc_good_good_edit_confirm_input_ele_GPS: xpath
+pc_good_good_edit_confirm_input_ele: //div[@class='butgrop']/button[1]
+#pc修改商品》检测“修改成功”文本
+pc_good_edit_successfully_text_ele_GPS: xpath
+pc_good_edit_successfully_text_ele: //p[@class='el-message__content']
+#pc供应商钮
+pc_wholesale_ele_GPS: xpath
+pc_wholesale_ele: //ul[@class='nav']/li[4]/li[7]
+#pc供应商>新增供应商钮
+pc_wholesale_add_ele_GPS: xpath
+pc_wholesale_add_ele: //*[contains(text(),"新增供应商")]
+#pc供应商>新增供应商>供应商名称输入框
+pc_wholesale_add_wholesalename_input_ele_GPS: xpath
+pc_wholesale_add_wholesalename_input_ele: //form[@class='el-form']/div[1]/div[1]/div[1]/input[1]
+#pc供应商>新增供应商>单位法人姓名
+pc_wholesale_add_law_contator_input_ele_GPS: xpath
+pc_wholesale_add_law_contator_input_ele: //form[@class='el-form']/div[2]/div[1]/div[1]/input[1]
+#pc供应商>新增供应商>单位联系人姓名
+pc_wholesale_add_contator_input_ele_GPS: xpath
+pc_wholesale_add_contator_input_ele: //form[@class='el-form']/div[3]/div[1]/div[1]/input[1]
+#pc供应商>新增供应商>单位联系人手机号
+pc_wholesale_add_contator_phonenumber_input_ele_GPS: xpath
+pc_wholesale_add_contator_phonenumber_input_ele: //form[@class='el-form']/div[4]/div[1]/div[1]/input[1]
+#pc供应商>新增供应商>供应商系统登录帐号
+pc_wholesale_add_login_phonenumber_input_ele_GPS: xpath
+pc_wholesale_add_login_phonenumber_input_ele: //form[@class='el-form']/div[5]/div[1]/div[1]/input[1]
+#pc供应商>新增供应商>供应商系统登录密码
+pc_wholesale_add_login_password_input_ele_GPS: xpath
+pc_wholesale_add_login_password_input_ele: //form[@class='el-form']/div[6]/div[1]/div[1]/input[1]
+#pc供应商>新增供应商>供应商邮箱
+pc_wholesale_add_email_input_ele_GPS: xpath
+pc_wholesale_add_email_input_ele: //form[@class='el-form']/div[7]/div[1]/div[1]/input[1]
+#pc供应商>新增供应商>营业执照号
+pc_wholesale_add_license_input_ele_GPS: xpath
+pc_wholesale_add_license_input_ele: //form[@class='el-form']/div[8]/div[1]/div[1]/input[1]
+#pc供应商>新增供应商>开户行名称
+pc_wholesale_add_bank_name_input_ele_GPS: xpath
+pc_wholesale_add_bank_name_input_ele: //form[@class='el-form']/div[9]/div[1]/div[1]/input[1]
+#pc供应商>新增供应商>银行帐号
+pc_wholesale_add_bank_number_input_ele_GPS: xpath
+pc_wholesale_add_bank_number_input_ele: //form[@class='el-form']/div[10]/div[1]/div[1]/input[1]
+#pc供应商>新增供应商>供应商地址>省
+pc_wholesale_add_province_select_ele_GPS: xpath
+pc_wholesale_add_province_select_ele: //form[@class='el-form']/div[11]/div[1]/div[1]
+#pc供应商>新增供应商>供应商地址>市
+pc_wholesale_add_city_select_ele_GPS: xpath
+pc_wholesale_add_city_select_ele: //form[@class='el-form']/div[12]/div[1]/div[1]
+#pc供应商>新增供应商>供应商地址>县
+pc_wholesale_add_county_select_ele_GPS: xpath
+pc_wholesale_add_county_select_ele: //form[@class='el-form']/div[13]/div[1]/div[1]
+#pc供应商>新增供应商>供应商地址>选择一个 省/市/区
+pc_wholesale_add_select_a_province_ele_GPS: xpath
+pc_wholesale_add_select_a_province_ele: //ul[@class='el-scrollbar__view el-select-dropdown__list']//*[contains(text(),"province")]/..
+pc_wholesale_add_select_a_city_ele_GPS: xpath
+pc_wholesale_add_select_a_city_ele: //ul[@class='el-scrollbar__view el-select-dropdown__list']//*[contains(text(),"city")]/..
+pc_wholesale_add_select_a_county_ele_GPS: xpath
+pc_wholesale_add_select_a_county_ele: //ul[@class='el-scrollbar__view el-select-dropdown__list']//*[contains(text(),"county")]/..
+#pc供应商>新增供应商>供应商详细地址
+pc_wholesale_add_address_input_ele_GPS: xpath
+pc_wholesale_add_address_input_ele: //form[@class='el-form']/div[14]/div[1]/div[1]/textarea[1]
+#pc供应商>新增供应商>MDM码
+pc_wholesale_add_MDM_input_ele_GPS: xpath
+pc_wholesale_add_MDM_input_ele: //form[@class='el-form']/div[15]/div[1]/div[1]/input[1]
+#pc供应商>新增供应商>FMIS码
+pc_wholesale_add_FMIS_input_ele_GPS: xpath
+pc_wholesale_add_FMIS_input_ele: //form[@class='el-form']/div[16]/div[1]/div[1]/input[1]
+#pc供应商>新增供应商>供应商编码
+pc_wholesale_add_wholesale_code_input_ele_GPS: xpath
+pc_wholesale_add_wholesale_code_input_ele: //form[@class='el-form']/div[17]/div[1]/div[1]/input[1]
+#pc供应商>新增供应商>保存
+pc_wholesale_add_save_button_ele_GPS: xpath
+pc_wholesale_add_save_button_ele: //div[@class='el-form-item']/div[1]/button[1]
+#pc新增供应商》检测“新建供应商成功”文本
+pc_wholesale_add_successfully_text_ele_GPS: xpath
+pc_wholesale_add_successfully_text_ele: //p[@class='el-message__content']
+#pc供应商》新增供应商》供应商名称搜索输入框
+pc_wholesale_add_wholesalesearch_input_ele_GPS: xpath
+pc_wholesale_add_wholesalesearch_input_ele: //div[@class='serch-right']/div[1]/input[1]
+#pc供应商》新增供应商》供应商搜索钮
+pc_wholesale_add_wholesalesearch_button_ele_GPS: xpath
+pc_wholesale_add_wholesalesearch_button_ele: //div[@class='serch-right']/button[1]
+#pc供应商列表第一个修改钮
+pc_wholesale_list_edit_button_ele_GPS: xpath
+pc_wholesale_list_edit_button_ele: //*[contains(text(),"修改")]
+#pc供应商管理钮
+pc_wholesale_ele_GPS: xpath
+pc_wholesale_ele: //ul[@class='nav']/li[4]/ul/li[7]
+#pc供应商>修改供应商钮
+pc_wholesale_edit_ele_GPS: xpath
+pc_wholesale_edit_ele: //*[contains(text(),"修改供应商")]
+#pc供应商>修改供应商>供应商名称输入框
+pc_wholesale_edit_wholesalename_input_ele_GPS: xpath
+pc_wholesale_edit_wholesalename_input_ele: //form[@class='el-form']/div[1]/div[1]/div[1]/input[1]
+#pc供应商>修改供应商>单位法人姓名
+pc_wholesale_edit_law_contator_input_ele_GPS: xpath
+pc_wholesale_edit_law_contator_input_ele: //form[@class='el-form']/div[2]/div[1]/div[1]/input[1]
+#pc供应商>修改供应商>单位联系人姓名
+pc_wholesale_edit_contator_input_ele_GPS: xpath
+pc_wholesale_edit_contator_input_ele: //form[@class='el-form']/div[3]/div[1]/div[1]/input[1]
+#pc供应商>修改供应商>单位联系人手机号
+pc_wholesale_edit_contator_phonenumber_input_ele_GPS: xpath
+pc_wholesale_edit_contator_phonenumber_input_ele: //form[@class='el-form']/div[4]/div[1]/div[1]/input[1]
+#pc供应商>修改供应商>供应商系统登录帐号
+pc_wholesale_edit_login_phonenumber_input_ele_GPS: xpath
+pc_wholesale_edit_login_phonenumber_input_ele: //form[@class='el-form']/div[5]/div[1]/div[1]/input[1]
+#pc供应商>修改供应商>供应商系统登录密码
+pc_wholesale_edit_login_password_input_ele_GPS: xpath
+pc_wholesale_edit_login_password_input_ele: //form[@class='el-form']/div[6]/div[1]/div[1]/input[1]
+#pc供应商>修改供应商>供应商邮箱
+pc_wholesale_edit_email_input_ele_GPS: xpath
+pc_wholesale_edit_email_input_ele: //form[@class='el-form']/div[7]/div[1]/div[1]/input[1]
+#pc供应商>修改供应商>营业执照号
+pc_wholesale_edit_license_input_ele_GPS: xpath
+pc_wholesale_edit_license_input_ele: //form[@class='el-form']/div[8]/div[1]/div[1]/input[1]
+#pc供应商>修改供应商>开户行名称
+pc_wholesale_edit_bank_name_input_ele_GPS: xpath
+pc_wholesale_edit_bank_name_input_ele: //form[@class='el-form']/div[9]/div[1]/div[1]/input[1]
+#pc供应商>修改供应商>银行帐号
+pc_wholesale_edit_bank_number_input_ele_GPS: xpath
+pc_wholesale_edit_bank_number_input_ele: //form[@class='el-form']/div[10]/div[1]/div[1]/input[1]
+#pc供应商>修改供应商>供应商地址>省
+pc_wholesale_edit_province_select_ele_GPS: xpath
+pc_wholesale_edit_province_select_ele: //form[@class='el-form']/div[11]/div[1]/div[1]
+#pc供应商>修改供应商>供应商地址>市
+pc_wholesale_edit_city_select_ele_GPS: xpath
+pc_wholesale_edit_city_select_ele: //form[@class='el-form']/div[12]/div[1]/div[1]
+#pc供应商>修改供应商>供应商地址>县
+pc_wholesale_edit_county_select_ele_GPS: xpath
+pc_wholesale_edit_county_select_ele: //form[@class='el-form']/div[13]/div[1]/div[1]
+#pc供应商>修改供应商>供应商地址>选择一个 省/市/区
+pc_wholesale_edit_select_a_province_ele_GPS: xpath
+pc_wholesale_edit_select_a_province_ele: //ul[@class='el-scrollbar__view el-select-dropdown__list']//*[contains(text(),"province")]/..
+pc_wholesale_edit_select_a_city_ele_GPS: xpath
+pc_wholesale_edit_select_a_city_ele: //ul[@class='el-scrollbar__view el-select-dropdown__list']//*[contains(text(),"city")]/..
+pc_wholesale_edit_select_a_county_ele_GPS: xpath
+pc_wholesale_edit_select_a_county_ele: //ul[@class='el-scrollbar__view el-select-dropdown__list']//*[contains(text(),"county")]/..
+#pc供应商>修改供应商>供应商详细地址
+pc_wholesale_edit_editress_input_ele_GPS: xpath
+pc_wholesale_edit_editress_input_ele: //form[@class='el-form']/div[14]/div[1]/div[1]/textarea[1]
+#pc供应商>修改供应商>MDM码
+pc_wholesale_edit_MDM_input_ele_GPS: xpath
+pc_wholesale_edit_MDM_input_ele: //form[@class='el-form']/div[15]/div[1]/div[1]/input[1]
+#pc供应商>修改供应商>FMIS码
+pc_wholesale_edit_FMIS_input_ele_GPS: xpath
+pc_wholesale_edit_FMIS_input_ele: //form[@class='el-form']/div[16]/div[1]/div[1]/input[1]
+#pc供应商>修改供应商>供应商编码
+pc_wholesale_edit_wholesale_code_input_ele_GPS: xpath
+pc_wholesale_edit_wholesale_code_input_ele: //form[@class='el-form']/div[17]/div[1]/div[1]/input[1]
+#pc供应商>修改供应商>保存
+pc_wholesale_edit_save_button_ele_GPS: xpath
+pc_wholesale_edit_save_button_ele: //div[@class='el-form-item']/div[1]/button[1]
+#pc修改供应商》检测“修改成功”文本
+pc_wholesale_edit_successfully_text_ele_GPS: xpath
+pc_wholesale_edit_successfully_text_ele: //p[@class='el-message__content']
+#pc设置
+pc_setting_ele_GPS: xpath
+pc_setting_ele: //ul[@class='nav']/li[6]
+#pc支付方式钮
+pc_payment_ele_GPS: xpath
+pc_payment_ele: //ul[@class='nav']/li[6]/ul/li[1]
+#pc支付方式>新增支付方式钮
+pc_payment_add_ele_GPS: xpath
+pc_payment_add_ele: //*[contains(text(),"新增支付方式")]
+#pc支付方式>新增支付方式>支付方式名称输入框
+pc_payment_add_paymentname_input_ele_GPS: xpath
+pc_payment_add_paymentname_input_ele: //div[@class='payBox']/div[1]/input[1]
+#pc支付方式>新增支付方式>勾选需要券码
+pc_payment_add_if_need_paycode_ele_GPS: xpath
+pc_payment_add_if_need_paycode_ele: //*[contains(text(),"需要输入券码")]
+#pc支付方式>新增支付方式>确定钮
+pc_payment_add_save_button_ele_GPS: xpath
+pc_payment_add_save_button_ele: //span[contains(text(),"确 定")]/..
+#pc新增支付方式》检测“新增成功”文本
+pc_payment_add_successfully_text_ele_GPS: xpath
+pc_payment_add_successfully_text_ele: //p[@class='el-message__content']
+#pc支付方式>启用/停用支付方式钮
+pc_payment_start_or_stop_button_ele_GPS: xpath
+pc_payment_start_or_stop_button_ele: //table[@class='el-table__body']/tbody[1]/tr[4]/td[2]/div[1]/div[1]/span[1]
+#销售订单》商品条码输入框
+order_codeinput_ele_GPS: id
+order_codeinput_ele: cnpc.com.hft.hftlauncher:id/edt_good_code
+#销售订单》搜索到的唯一商品钮
+order_onlycode_ele_GPS: xpath
+order_onlycode_ele: //*[@resource-id='cnpc.com.hft.hftlauncher:id/recycler_view']/android.widget.FrameLayout
+#销售订单》编辑第一个商品 数量钮
+order_edit_first_good_quantity_ele_GPS: xpath
+order_edit_first_good_quantity_ele: //*[@resource-id='cnpc.com.hft.hftlauncher:id/account_btn']/..
+#销售订单》编辑数量》3按钮
+order_edit_quantity_3_button_ele_GPS: xpath
+order_edit_quantity_3_button_ele: //*[@resource-id='cnpc.com.hft.hftlauncher:id/bt_keyboard_3']
+#销售订单》编辑数量》确定钮
+order_edit_quantity_confirm_button_ele_GPS: xpath
+order_edit_quantity_confirm_button_ele: //*[@resource-id='cnpc.com.hft.hftlauncher:id/bt_keyboard_sure']
+#销售订单》收款按钮
+order_receive_button_ele_GPS: id
+order_receive_button_ele: cnpc.com.hft.hftlauncher:id/receive_tv
+#销售订单》收款页面》9 按钮
+order_cash_money_9_button_ele_GPS: id
+order_cash_money_9_button_ele: cnpc.com.hft.hftlauncher:id/btn_9
+#销售订单》收款页面》现金结账 按钮
+order_pay_button_ele_GPS: id
+order_pay_button_ele: cnpc.com.hft.hftlauncher:id/btn_pay
+#销售订单》收款页面》第四个支付方式
+order_pay_thefourth_payway_ticket_ele_GPS: xpath
+order_pay_thefourth_payway_ticket_ele: //*[@resource-id='cnpc.com.hft.hftlauncher:id/pay_type_recyclerview']/android.view.View[4]
+#销售订单》收款页面》券支付》金额输入框
+order_pay_ticket_money_input_ele_GPS: id
+order_pay_ticket_money_input_ele: cnpc.com.hft.hftlauncher:id/edt_coupon_money
+#销售订单》收款页面》券支付》券码输入框
+order_pay_ticket_code_input_ele_GPS: id
+order_pay_ticket_code_input_ele: cnpc.com.hft.hftlauncher:id/edt_coupon_code
+#销售订单》收款页面》券支付》结账 按钮
+order_pay_ticket_pay_button_ele_GPS: id
+order_pay_ticket_pay_button_ele: cnpc.com.hft.hftlauncher:id/order_bottom_sure_tv
+#销售订单》收款页面》现金支付》组合支付 按钮
+order_pay_cash_mixpay_button_ele_GPS: id
+order_pay_cash_mixpay_button_ele: cnpc.com.hft.hftlauncher:id/btn_mix
+#pc店员管理按钮
+pc_store_staff_ele_GPS: xpath
+pc_store_staff_ele: //ul[@class='nav']/li[6]/ul/li[2]
+#pc店员管理>店铺选择框
+pc_store_staff_store_select_ele_GPS: xpath
+pc_store_staff_store_select_ele: //div[@class='pertop']/div[1]/div[1]
+#pc店员管理》选择具体店铺》动态取一店铺
+pc_store_staff_chose_a_store_ele_GPS: xpath
+pc_store_staff_chose_a_store_ele: //*[contains(text(),"store_name")]/..
+#pc店员管理》新增店员按钮
+pc_store_staff_add_button_ele_GPS: xpath
+pc_store_staff_add_button_ele: //div[@class='pertop']/button[1]
+#pc店员管理》新增店员》店员姓名输入框
+pc_store_staff_add_staffname_input_ele_GPS: xpath
+pc_store_staff_add_staffname_input_ele: //form[@class='el-form demo-form-inline']/div[1]/div[1]/div[1]/input[1]
+#pc店员管理》新增店员》店员账号
+pc_store_staff_add_staffphone_input_ele_GPS: xpath
+pc_store_staff_add_staffphone_input_ele: //form[@class='el-form demo-form-inline']/div[2]/div[1]/div[1]/input[1]
+#pc店员管理》新增店员》店员密码
+pc_store_staff_add_staffpassword_input_ele_GPS: xpath
+pc_store_staff_add_staffpassword_input_ele: //form[@class='el-form demo-form-inline']/div[3]/div[1]/div[1]/input[1]
+#pc店员管理》新增店员》确定按钮
+pc_store_staff_add_confirm_button_ele_GPS: xpath
+pc_store_staff_add_confirm_button_ele: //div[@class='el-dialog model-view']/div[3]/div[1]/button[1]
+#pc新增店员》检测“请求成功”文本
+pc_store_staff_add_successfully_text_ele_GPS: xpath
+pc_store_staff_add_successfully_text_ele: //p[@class='el-message__content']
+#pc店员管理》编辑店员》第二个店员》编辑按钮
+pc_store_staff_secondstaff_edit_button_input_ele_GPS: xpath
+pc_store_staff_secondstaff_edit_button_input_ele: //table[@class='el-table__body']/tbody[1]/tr[2]/td[5]/div[1]/button[1]
+#pc店员管理》编辑店员》店员姓名输入框
+pc_store_staff_edit_staffname_input_ele_GPS: xpath
+pc_store_staff_edit_staffname_input_ele: //form[@class='el-form demo-form-inline']/div[1]/div[1]/div[1]/input[1]
+#pc店员管理》编辑店员》密码输入框
+pc_store_staff_edit_staff_password_input_ele_GPS: xpath
+pc_store_staff_edit_staff_password_input_ele: //form[@class='el-form demo-form-inline']/div[3]/div[1]/div[1]/input[1]
+#pc店员管理》编辑店员》确定按钮
+pc_store_staff_edit_confirm_button_ele_GPS: xpath
+pc_store_staff_edit_confirm_button_ele: //div[@class='el-dialog model-view']/div[3]/div[1]/button[1]
+#pc店员管理》编辑店员》启用/停用店员
+pc_store_staff_edit_staff_if_start_or_stop_button_ele_GPS: xpath
+pc_store_staff_edit_staff_if_start_or_stop_button_ele: //table[@class='el-table__body']/tbody[1]/tr[2]/td[1]/div[1]/div[1]/span[1]
+#pc编辑店员》检测“请求成功”文本
+pc_store_staff_edit_successfully_text_ele_GPS: xpath
+pc_store_staff_edit_successfully_text_ele: //p[@class='el-message__content']
+#pc促销钮
+pc_promotion_ele_GPS: xpath
+pc_promotion_ele: //ul[@class='nav']/li[5]
+#pc促销》新增促销活动 钮
+pc_promotion_promotionadd_button_ele_GPS: xpath
+pc_promotion_promotionadd_button_ele_GPS: //div[@class='apply-top']/div[2]/button[1]
+#pc促销》新增促销活动》促销类型选择框
+pc_promotion_promotiontype_select_button_ele_GPS: xpath
+pc_promotion_promotiontype_select_button_ele: //div[@class='el-select code_width']/div[1]
+#pc促销》新增促销活动》促销类型动态选择
+pc_promotion_promotiontype_select_button_ele_GPS: xpath
+pc_promotion_promotiontype_select_button_ele: //*[contains(text(),"promotion_type")]/..
+#pc促销》新增促销活动》促销名称 输入框
+pc_promotion_promotion_name_input_ele_GPS: xpath
+pc_promotion_promotion_name_input_ele: //div[@class='code_width el-input']/input[1]
+#pc促销》新增促销活动》+选择门店 按钮
+pc_promotion_promotion_store_select_button_ele_GPS: xpath
+pc_promotion_promotion_store_select_button_ele: //*[contains(text(),"+选择门店")]
+#pc促销》新增促销活动》开始时间 输入框
+pc_promotion_promotion_store_select_button_ele_GPS: xpath
+pc_promotion_promotion_store_select_button_ele: //div[@class='el-input__inner' and @type='text' and @placeholder='选择开始日期']
+#pc促销》新增促销活动》结束时间 输入框
+pc_promotion_promotion_store_select_button_ele_GPS: xpath
+pc_promotion_promotion_store_select_button_ele: //div[@class='el-input__inner' and @type='text' and @placeholder='选择结束日期']
+#pc促销》新增促销活动》添加商品 按钮
+pc_promotion_promotion_store_select_button_ele_GPS: xpath
+pc_promotion_promotion_store_select_button_ele: //span[contains(text(),"添加商品")]/..
+#pc促销》新增促销活动》保存 按钮
+pc_promotion_promotion_store_select_button_ele_GPS: xpath
+pc_promotion_promotion_store_select_button_ele: //span[contains(text(),"保存")]/..
+#pc库存管理 按钮
+pc_good_stock_ele_GPS: xpath
+pc_good_stock_ele: //ul[@class='nav']/li[4]/ul/li[1]
+#pc库存管理》店铺选择框
+pc_good_stock_store_select_ele_GPS: xpath
+pc_good_stock_store_select_ele: //div[@class='serch-right']/div[1]/div[1]
+#pc库存管理》动态取一店铺
+pc_good_stock_select_the_store_ele_GPS: xpath
+pc_good_stock_select_the_store_ele: //*[contains(text(),"store_name")]/..
+#pc库存管理》商品分类 选择框
+pc_good_stock_category_select_ele_GPS: xpath
+pc_good_stock_category_select_ele: //div[@class='serch-right']/div[2]/div[1]
+#pc库存管理》动态取一 商品分类
+pc_good_stock_select_the_category_ele_GPS: xpath
+pc_good_stock_select_the_category_ele: //div[@class='el-select-dropdown__wrap el-scrollbar__wrap']//*[contains(text(),"category_name")]/..
+#pc库存管理》搜索商品输入框
+pc_good_stock_search_goodcode_input_ele_GPS: xpath
+pc_good_stock_search_goodcode_input_ele: //div[@class='serch-right']/div[3]/input[1]
+#pc库存管理》搜索 按钮
+pc_good_stock_goodcode_search_button_ele_GPS: xpath
+pc_good_stock_goodcode_search_button_ele: //div[@class='serch-right']/button[1]
+#pc库存管理》预警库存 编辑 按钮
+pc_good_stock_warning_stock_edit_button_ele_GPS: xpath
+pc_good_stock_warning_stock_edit_button_ele: //table[@class='el-table__body']/tbody[1]/tr[1]/td[9]/div[1]/div[1]/button[1]
+#pc库存管理》预警值弹窗》预警值输入框
+pc_good_stock_warning_stock_input_ele_GPS: xpath
+pc_good_stock_warning_stock_input_ele: //div[@class='el-dialog__wrapper']/div[1]/div[2]/div[1]/ div[1]/input[1]
+#pc库存管理》预警值弹窗》确定
+pc_good_stock_warning_stock_confirm_button_ele_GPS: xpath
+pc_good_stock_warning_stock_confirm_button_ele: //div[@class='el-dialog__wrapper']/div[1]/div[3]/span[1]/button[1]
+#pc编辑店员》检测“更新库存信息成功！”文本
+pc_good_stock_edit_successfully_text_ele_GPS: xpath
+pc_good_stock_edit_successfully_text_ele: //p[@class='el-message__content']
+#pc货架管理 按钮
+pc_shelves_li_ele_GPS: xpath
+pc_shelves_li_ele: //ul[@class='nav']/li[4]/ul/li[2]
+#pc货架管理》店铺选择框
+pc_shelves_store_select_ele_GPS: xpath
+pc_shelves_store_select_ele: //div[@class='shelfTop']/div[2]/div[1]
+#pc货架管理》动态取一店铺
+pc_shelves_select_the_store_ele_GPS: xpath
+pc_shelves_select_the_store_ele: //*[contains(text(),"store_name")]/..
+#pc货架管理》新增 按钮
+pc_shelves_add_button_ele_GPS: xpath
+pc_shelves_add_button_ele: //div[@class='shelfTop']/div[1]/button[1]
+#pc货架管理》新增货架》货架层数选择框
+pc_shelves_add_level_select_ele_GPS: xpath
+pc_shelves_add_level_select_ele: //div[@class='selectFloor']/div[1]/div[1]/div[1]
+#pc货架管理》新增货架》动态选取货架层数
+pc_shelves_add_select_the_level_ele_GPS: xpath
+pc_shelves_add_select_the_level_ele: //span[contains(text(),"shelves_level")]/..
+#pc货架管理》新增货架》货架名称输入框
+pc_shelves_add_shelves_name_input_ele_GPS: xpath
+pc_shelves_add_shelves_name_input_ele: //div[@class='selectFloor']/div[2]/div[1]/input[1]
+#pc货架管理》新增货架》高度 按钮
+pc_shelves_add_high_button_ele_GPS: xpath
+pc_shelves_add_high_button_ele: //div[contains(text(),"高度")]
+#pc货架管理》新增货架》高度弹窗》高度输入框
+pc_shelves_add_high_input_ele_GPS: xpath
+pc_shelves_add_high_input_ele: //div[@class='heightBox']/div[1]/input[1]
+#pc货架管理》新增货架》高度弹窗》确定 按钮
+pc_shelves_add_high_confirm_button_ele_GPS: xpath
+pc_shelves_add_high_confirm_button_ele: //div[@class='mainBody']/../div[8]/div[1]/div[3]/span[1]/button[2]
+#pc货架管理》新增货架》搜索商品弹窗》商品条码输入框
+pc_shelves_search_goodcode_input_ele_GPS: xpath
+pc_shelves_search_goodcode_input_ele: //div[@class='search']/div[1]/input
+#pc货架管理》新增货架》搜索商品弹窗》搜索 按钮
+pc_shelves_search_goodcode_button_ele_GPS: xpath
+pc_shelves_search_goodcode_button_ele: //span[contains(text(),'搜索')]/..
+#pc货架管理》新增货架》 添加商品到货架 的 添加 按钮
+pc_shelves_add_good_to_floor_button_ele_GPS: xpath
+pc_shelves_add_good_to_floor_button_ele: //table[@class='el-table__body']/tbody/tr[1]/td[5]/div/button
+#pc货架管理》新增货架》第一层 动态获取  +商品 按钮
+pc_shelves_add_goodadd_button_ele_GPS: xpath
+pc_shelves_add_goodadd_button_ele: //div[@class='mainBody']/div[2]/div[1]/div[2]/div[2]
+#pc货架管理》新增货架》第二层 动态获取  +商品 按钮
+pc_shelves_add_second_floor_goodadd_button_ele_GPS: xpath
+pc_shelves_add_second_floor_goodadd_button_ele: //div[@class='mainBody']/div[3]/div[1]/div[2]/div[2]
+#pc货架管理》新增货架》第三层 动态获取  +商品 按钮
+pc_shelves_add_third_floor_goodadd_button_ele_GPS: xpath
+pc_shelves_add_third_floor_goodadd_button_ele: //div[@class='mainBody']/div[4]/div[1]/div[2]/div[2]
+#pc货架管理》新增货架》第四层 动态获取  +商品 按钮
+pc_shelves_add_fourth_floor_goodadd_button_ele_GPS: xpath
+pc_shelves_add_fourth_floor_goodadd_button_ele: //div[@class='mainBody']/div[5]/div[1]/div[2]/div[2]
+#pc货架管理》新增货架》第五层 动态获取  +商品 按钮
+pc_shelves_add_fifth_floor_goodadd_button_ele_GPS: xpath
+pc_shelves_add_fifth_floor_goodadd_button_ele: //div[@class='mainBody']/div[6]/div[1]/div[2]/div[2]
+#pc货架管理》新增货架》第六层 动态获取  +商品 按钮
+pc_shelves_add_sixth_floor_goodadd_button_ele_GPS: xpath
+pc_shelves_add_sixth_floor_goodadd_button_ele: //div[@class='mainBody']/div[7]/div[1]/div[2]/div[2]
+#pc货架管理》新增货架》第七层 动态获取  +商品 按钮
+pc_shelves_add_seventh_floor_goodadd_button_ele_GPS: xpath
+pc_shelves_add_seventh_floor_goodadd_button_ele: //div[@class='mainBody']/div[8]/div[1]/div[2]/div[2]
+#pc货架管理》新增货架》第八层 动态获取  +商品 按钮
+pc_shelves_add_eighth_floor_goodadd_button_ele_GPS: xpath
+pc_shelves_add_eighth_floor_goodadd_button_ele: //div[@class='mainBody']/div[9]/div[1]/div[2]/div[2]
+#pc货架管理》新增货架》第九层 动态获取  +商品 按钮
+pc_shelves_add_ninth_floor_goodadd_button_ele_GPS: xpath
+pc_shelves_add_ninth_floor_goodadd_button_ele: //div[@class='mainBody']/div[10]/div[1]/div[2]/div[2]
+#pc货架管理》新增货架》第十层 动态获取  +商品 按钮
+pc_shelves_add_tenth_floor_goodadd_button_ele_GPS: xpath
+pc_shelves_add_tenth_floor_goodadd_button_ele: //div[@class='mainBody']/div[11]/div[1]/div[2]/div[2]
+#pc货架管理》新增货架》 添加商品到货架》货架库存 输入框
+pc_shelves_add_good_to_floor_stock_input_ele_GPS: xpath
+pc_shelves_add_good_to_floor_stock_input_ele: //div[@class='proBox']/form/div[1]/div/div/input
+#pc货架管理》新增货架》 添加商品到货架》满架陈列排数 输入框
+pc_shelves_add_good_to_floor_column_input_ele_GPS: xpath
+pc_shelves_add_good_to_floor_column_input_ele: //div[@class='proBox']/form/div[2]/div/div/input
+#pc货架管理》新增货架》 添加商品到货架》满架陈列数量 输入框
+pc_shelves_add_good_to_floor_full_quantity_input_ele_GPS: xpath
+pc_shelves_add_good_to_floor_full_quantity_input_ele: //div[@class='proBox']/form/div[3]/div/div/input
+#pc货架管理》新增货架》 添加商品到货架》确定 按钮
+pc_shelves_add_good_to_floor_confirm_button_ele_GPS: xpath
+pc_shelves_add_good_to_floor_confirm_button_ele: //div[@class='shelfInventory']/div/div/div[3]/span/button[2]
+#pc货架管理》新增货架》 保存 按钮
+pc_shelves_add_confirm_button_ele_GPS: xpath
+pc_shelves_add_confirm_button_ele: //span[contains(text(),'保存')]/..
+#pc货架管理》新增货架》检测“添加货架成功”文本
+pc_shelves_add_successfully_text_ele_GPS: xpath
+pc_shelves_add_successfully_text_ele: //p[@class='el-message__content']
+#pc设置》自动收货时间 按钮
+pc_received_duration_li_ele_GPS: xpath
+pc_received_duration_li_ele: //ul[@class='nav']/li[6]/ul/li[3]
+#pc设置》自动收货时间》店铺选择框
+pc_received_duration_store_select_ele_GPS: xpath
+pc_received_duration_store_select_ele: //div[@class='pertop']/div[1]/div[1]
+#pc设置》自动收货时间》动态选择 店铺
+pc_received_duration_select_the_store_ele_GPS: xpath
+pc_received_duration_select_the_store_ele: //*[contains(text(),"store_name")]/..
+#pc设置》自动收货时间》编辑 按钮
+pc_received_duration_edit_button_ele_GPS: xpath
+pc_received_duration_edit_button_ele: //div[@class='times']/div[3]/button[1]
+#pc设置》自动收货时间》编辑》天数 输入框
+pc_received_duration_edit_day_input_ele_GPS: xpath
+pc_received_duration_edit_day_input_ele: //input[@class='el-input__inner' and @type='text' and @placeholder='天数']
+#pc设置》自动收货时间》编辑》确定 按钮
+pc_received_duration_edit_confirm_button_ele_GPS: xpath
+pc_received_duration_edit_confirm_button_ele: //div[@class='el-dialog model-view']/div[3]/div[1]/button[1]
+#pc编辑自动收货时间》检测“编辑成功”文本
+pc_received_duration_edit_successfully_text_ele_GPS: xpath
+pc_received_duration_edit_successfully_text_ele: //p[@class='el-message__content']
+#pc设置》自动收货时间》将此天数同步到所有店铺 按钮
+pc_received_duration_edit_all_store_button_ele_GPS: xpath
+pc_received_duration_edit_all_store_button_ele: //div[@class='container-fluid main-content']/div[1]/div[3]/button[1]
+#pc设置》自动收货时间》将此天数同步到所有店铺》二次确认弹窗 是 按钮
+pc_received_duration_edit_all_store_confirm_button_ele_GPS: xpath
+pc_received_duration_edit_all_store_confirm_button_ele: //div[@class='el-dialog el-dialog--center']/div[3]/span[1]/button[2]
+#pc编辑全部店铺自动收货时间》检测“编辑成功”文本
+pc_received_duration_edit_all_store_successfully_text_ele_GPS: xpath
+pc_received_duration_edit_all_store_successfully_text_ele: //p[@class='el-message__content']
+#pc盘点历史 按钮
+pc_pandian_history_li_ele_GPS: xpath
+pc_pandian_history_li_ele: //ul[@class='nav']/li[4]/ul/li[3]
+#pc盘点历史》店铺选择框
+pc_pandian_history_store_select_ele_GPS: xpath
+pc_pandian_history_store_select_ele: //div[@class='allShop']/div[1]/div[1]
+#pc盘点历史》动态选择 店铺
+pc_pandian_history_select_the_store_ele_GPS: xpath
+pc_pandian_history_select_the_store_ele: //*[contains(text(),"store_name")]/..
+#pc盘点历史》开始时间选择框
+pc_pandian_history_start_time_select_ele_GPS: xpath
+pc_pandian_history_start_time_select_ele: //div[@class='datetime']/div[1]
+#pc盘点历史》结束时间选择框
+pc_pandian_history_end_time_select_ele_GPS: xpath
+pc_pandian_history_end_time_select_ele: //div[@class='datetime']/div[2]
+#pc盘点历史》开始时间选择框》开始时间 “日” 输入框
+pc_pandian_history_start_time_day_input_ele_GPS: xpath
+pc_pandian_history_start_time_day_input_ele: //div[@class='el-picker-panel__body-wrapper']/div[1]/div[1]/span[1]/div[1]/input[1]
+#pc盘点历史》结束时间选择框》结束时间 “日” 输入框
+pc_pandian_history_end_time_day_input_ele_GPS: xpath
+pc_pandian_history_end_time_day_input_ele: //div[@class='sidebar-lg-show header-fixed sidebar-fixed']/div[4]/div[1]/div[1]/div[1]/span[1]/div[1]/input[1]
+#pc盘点历史》时间选择框》确定 按钮
+pc_pandian_history_start_time_confirm_button_ele_GPS: xpath
+#pc_pandian_history_start_time_confirm_button_ele: //div[@class='el-picker-panel__footer']/button[2]
+pc_pandian_history_start_time_confirm_button_ele: //*[contains(text(),"确定")]/..
+#pc盘点历史》详情的 查看 按钮
+pc_pandian_history_chakan_button_ele_GPS: xpath
+pc_pandian_history_chakan_button_ele: //*[contains(text(),"查看")]/..
+#pc盘点历史》检测文本 “2000703065076”
+pc_pandian_history_check_code_text_ele_GPS: xpath
+pc_pandian_history_check_code_text_ele: //tr[@class='el-table__row']/td[3]/div[1]
+#pc报表 按钮
+pc_report_ele_GPS: xpath
+pc_report_ele: //ul[@class='nav']/li[1]
+#pc 日销售报表-财务用 按钮
+pc_caiwu_report_li_ele_GPS: xpath
+pc_caiwu_report_li_ele: //ul[@class='nav']/li[1]/ul/li[1]
+#pc日销售报表-财务用》开始时间选择框
+pc_caiwu_report_start_time_select_ele_GPS: xpath
+pc_caiwu_report_start_time_select_ele: //div[@class='datetime']/div[1]
+#pc日销售报表-财务用》开始时间选择框》开始时间 “日” 输入框
+pc_caiwu_report_start_time_day_input_ele_GPS: xpath
+pc_caiwu_report_start_time_day_input_ele: //div[@class='el-picker-panel__body-wrapper']/div[1]/div[1]/span[1]/div[1]/input[1]
+#pc日销售报表-财务用》店铺选择框
+pc_caiwu_report_store_select_ele_GPS: xpath
+pc_caiwu_report_store_select_ele: //div[@class='allShop']/div[1]/div[1]
+#pc日销售报表-财务用》动态选择 店铺
+pc_caiwu_report_select_the_store_ele_GPS: xpath
+pc_caiwu_report_select_the_store_ele: //*[contains(text(),"store_name")]/..
+#pc日销售报表-财务用》查询 按钮
+pc_caiwu_report_search_button_ele_GPS: xpath
+pc_caiwu_report_search_button_ele: //*[contains(text(),"查询")]/..
+#pc日销售报表-财务用》检测文本 “2000702356175”
+pc_caiwu_report_check_code_text_ele_GPS: xpath
+pc_caiwu_report_check_code_text_ele: //tr[@class='el-table__row']/td[3]/div[1]
+#pc 订/退货报表 按钮
+pc_subscribe_and_returnsubscribe_report_li_ele_GPS: xpath
+pc_subscribe_and_returnsubscribe_report_li_ele: //ul[@class='nav']/li[1]/ul/li[2]
+#pc订/退货报表》开始时间选择框
+pc_subscribe_and_returnsubscribe_report_start_time_select_ele_GPS: xpath
+pc_subscribe_and_returnsubscribe_report_start_time_select_ele: //div[@class='datetime']/div[1]
+#pc订/退货报表》开始时间选择框》开始时间 “日” 输入框
+pc_subscribe_and_returnsubscribe_report_start_time_day_input_ele_GPS: xpath
+pc_subscribe_and_returnsubscribe_report_start_time_day_input_ele: //div[@class='el-picker-panel__body-wrapper']/div[1]/div[1]/span[1]/div[1]/input[1]
+#pc订/退货报表》查询 按钮
+pc_subscribe_and_returnsubscribe_report_search_button_ele_GPS: xpath
+pc_subscribe_and_returnsubscribe_report_search_button_ele: //*[contains(text(),"查询")]/..
+#pc订/退货报表》详情的 查看 按钮
+pc_subscribe_and_returnsubscribe_report_chakan_button_ele_GPS: xpath
+pc_subscribe_and_returnsubscribe_report_chakan_button_ele: //*[contains(text(),"查看")]/..
+#pc订/退货报表》检测文本 “2000702356175”
+pc_subscribe_and_returnsubscribe_report_check_code_text_ele_GPS: xpath
+#pc_subscribe_and_returnsubscribe_report_check_code_text_ele: //tr[@class='el-table__row']/td[3]/div[1]
+pc_subscribe_and_returnsubscribe_report_check_code_text_ele: //div[@class='orderDetail']/div[1]/span[2]
+#pc 交接班报表 按钮
+pc_hand_over_report_li_ele_GPS: xpath
+pc_hand_over_report_li_ele: //ul[@class='nav']/li[1]/ul/li[3]
+#pc交接班报表》开始时间选择框
+pc_hand_over_report_start_time_select_ele_GPS: xpath
+pc_hand_over_report_start_time_select_ele: //div[@class='time']/div[1]/input
+#pc交接班报表》开始时间选择框》开始时间 “日” 输入框
+pc_hand_over_report_start_time_day_input_ele_GPS: xpath
+pc_hand_over_report_start_time_day_input_ele: //div[@class='el-picker-panel__body-wrapper']/div[1]/div[1]/span[1]/div[1]/input[1]
+#pc交接班报表》店铺选择框
+pc_hand_over_report_store_select_ele_GPS: xpath
+pc_hand_over_report_store_select_ele: //div[@class='allShop']/div[1]/div[1]
+#pc交接班报表》动态选择 店铺
+pc_hand_over_report_select_the_store_ele_GPS: xpath
+pc_hand_over_report_select_the_store_ele: //*[contains(text(),"store_name")]/..
+#pc交接班报表》检测文本 “2000702356175”
+pc_hand_over_report_check_code_text_ele_GPS: xpath
+pc_hand_over_report_check_code_text_ele: //tr[@class='el-table__row']/td[3]/div[1]
+#pc促销 按钮
+pc_promotion_ele_GPS: xpath
+pc_promotion_ele: //ul[@class='nav']/li[5]
+#pc新增促销活动 按钮
+pc_promotion_add_button_ele_GPS: xpath
+pc_promotion_add_button_ele: //div[@class='apply-button']/button[1]
+#pc新增促销》促销类型选择框
+pc_promotion_add_promotiontype_select_ele_GPS: xpath
+pc_promotion_add_promotiontype_select_ele: //div[@class='el-select code_width']/div[1]
+#pc新增促销》促销类型动态选择
+pc_promotion_add_select_the_promotiontype_ele_GPS: xpath
+pc_promotion_add_select_the_promotiontype_ele: //span[contains(text(),"promotion_type")]
+#pc新增促销》促销类型名称输入框
+pc_promotion_add_promotionname_input_ele_GPS: xpath
+pc_promotion_add_promotionname_input_ele: //div[@class='code_width el-input']/input[1]
+#pc新增促销》+门店 按钮
+pc_promotion_add_storeadd_button_ele_GPS: xpath
+pc_promotion_add_storeadd_button_ele: //span[contains(text(),"+选择门店")]
+#pc新增促销》动态选取 门店
+pc_promotion_add_select_the_store_ele_GPS: xpath
+pc_promotion_add_select_the_store_ele: //span[contains(text(),"store_name")]/..
+#pc新增促销》选择门店》确定 按钮
+pc_promotion_add_storeadd_confirm_button_ele_GPS: xpath
+pc_promotion_add_storeadd_confirm_button_ele: //div[@class='div-btn']/button[1]
+#pc新增促销》开始时间 选择框
+pc_promotion_add_startdate_select_ele_GPS: xpath
+pc_promotion_add_startdate_select_ele: //form[@class='el-form card-ruleForm el-form--label-right']/div[4]/div[1]/div[1]/input
+#pc新增促销》结束时间 选择框
+pc_promotion_add_enddate_select_ele_GPS: xpath
+pc_promotion_add_enddate_select_ele: //form[@class='el-form card-ruleForm el-form--label-right']/div[5]/div[1]/div[1]/input
+#pc新增促销》 添加商品 按钮
+pc_promotion_add_goodadd_button_ele_GPS: xpath
+pc_promotion_add_goodadd_button_ele: //button[@class='el-button select-promotion-btn el-button--default']
+#pc新增促销》 促销保存 按钮
+pc_promotion_add_promotionsave_button_ele_GPS: xpath
+pc_promotion_add_promotionsave_button_ele: //button[@class='el-button save-btn el-button--default']
+#pc新增促销》 商品打折》商品搜索输入框
+pc_promotion_add_discount_goodsearch_input_ele_GPS: xpath
+pc_promotion_add_discount_goodsearch_input_ele: //div[@class='search-good-input el-input']/input[1]
+#pc新增促销》 商品打折》商品搜索》搜索 按钮
+pc_promotion_add_discount_goodsearch_button_ele_GPS: xpath
+pc_promotion_add_discount_goodsearch_button_ele: //div[@class='search-good-input el-input']/../button[1]
+#pc新增促销》 商品打折》商品搜索》添加 按钮
+pc_promotion_add_discount_goodsearch_addgood_button_ele_GPS: xpath
+pc_promotion_add_discount_goodsearch_addgood_button_ele: //tr[@class='el-table__row']/td[1]/div[1]/button[1]
+#pc新增促销》 商品打折》最小数量输入框
+pc_promotion_add_discount_min_quantity_input_ele_GPS: xpath
+pc_promotion_add_discount_min_quantity_input_ele: //tr[@class='el-table__row']/../tr[1]/td[4]/div[1]/div[1]/input[1]
+#pc新增促销》 商品打折》折扣 输入框
+pc_promotion_add_discount_discount_input_ele_GPS: xpath
+pc_promotion_add_discount_discount_input_ele: //tr[@class='el-table__row']/../tr[1]/td[6]/div[1]/div[1]/input[1]
+#pc新增促销》 商品打折》 商品促销规则》确定 按钮
+pc_promotion_add_discount_discount_rule_confirm_button_ele_GPS: xpath
+pc_promotion_add_discount_discount_rule_confirm_button_ele: //div[@class='pro-footer']/button[1]
+#app惠智付》账号输入框
+app_huizhifu_phone_input_ele_GPS: xpath
+app_huizhifu_phone_input_ele: //*[@resource-id='tel']/android.view.View[1]/android.widget.EditText
+#app惠智付》密码输入框
+app_huizhifu_pssword_input_ele_GPS: xpath
+app_huizhifu_pssword_input_ele: //*[@resource-id='password']/android.view.View[1]/android.widget.EditText
+app_huizhifu_name:  13229794612
+app_huizhifu_password: 123456
+#app惠智付》登录 按钮
+app_huizhifu_login_button_ele_GPS: xpath
+app_huizhifu_login_button_ele: //*[@resource-id='loginForm']/android.widget.Button
